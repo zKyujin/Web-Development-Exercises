@@ -1,0 +1,29 @@
+<!-- CSS selectors are attributes that selects a certain amount elements to change.
+for example, if I use h1 [color:red], it'll change all my h1's to red, but what should I do
+if I want to change just one or a specific amount?
+That's the function of css selectors:
+Class selector: It's function is to assign a class to various elements, so you can change a certain amount at once
+like this: h1 class="red-text">teste</h1>
+.red-text {
+    color:red;
+}
+
+Id Selector: It's function is the same as a class selector, but each id assigns just one element.
+h1 id="red-text">teste</h1>
+.id="red-text"{
+    color:red;
+}
+
+DRAGGABLE SELECTOR: <h1 draggable="true">Drag me </h1>
+                    p[draggable="true"] {
+                        color:blue;
+                    }
+                    <h1draggable="false">Don't drag me </h1>
+                    p[draggable="false"] {
+                        color:red;
+                    }
+            
+Universal selector (*): apply the changes to all elements, independent of what classes selectors you had used.
+* {
+    color:red;
+}
